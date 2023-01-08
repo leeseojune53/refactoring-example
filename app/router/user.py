@@ -17,4 +17,4 @@ async def say_hello(name):
              tags=["user"],
              responses={201: {"description": "created"}})
 async def create_user(user_id: str, user_name: str):
-    return {"user_id": user_id, "user_name": user_name}
+    return create_user(user_id, user_name)
